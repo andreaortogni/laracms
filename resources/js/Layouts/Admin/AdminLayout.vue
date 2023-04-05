@@ -19,10 +19,10 @@ import LeftMenu from '@/Components/Admin/LeftMenu.vue';
                 </PrimaryButton>
             </div>
         </div>
-        <div id="page-content" class="flex-auto">
+        <div id="page-content" class="flex-auto text-gray-800 bg-gray-100">
             <div class="flex flex-row h-full">
                 <LeftMenu></LeftMenu>
-                <div class="p-4 text-gray-800">
+                <div class="w-full">
                     <slot />
                 </div>
             </div>

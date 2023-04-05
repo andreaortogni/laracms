@@ -5,5 +5,7 @@ import { Head } from '@inertiajs/vue3';
 
 <template>
     <Head title="Dashboard" />
-    <AdminLayout></AdminLayout>
+    <AdminLayout>
+        ciao
+    </AdminLayout>
 </template>

@@ -16,4 +16,11 @@ class AdminController extends Controller
             'status' => session('status'),
         ]);
     }
+
+    public function categoryPage()
+    {
+        return Inertia::render('Admin/Categories', [
+            
+        ]);
+    }
 }

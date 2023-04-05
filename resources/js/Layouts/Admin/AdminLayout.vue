@@ -1,6 +1,7 @@
 <script setup>
 import { Link } from '@inertiajs/vue3';
 import PrimaryButton from '@/Components/Admin/PrimaryButton.vue';
+import LeftMenu from '@/Components/Admin/LeftMenu.vue';
 </script>
 
 <template>
@@ -20,12 +21,7 @@ import PrimaryButton from '@/Components/Admin/PrimaryButton.vue';
         </div>
         <div id="page-content" class="flex-auto">
             <div class="flex flex-row h-full">
-                <div id="left-menu" class="border-r border-gray-800 text-gray-800">
-                    <ul class="py-4">
-                        <li class="p-4 py-2 hover:bg-purple-800 hover:text-gray-100"><Link :href="route('admin.categories')">Categorie</Link></li>
-                        <li class="p-4 py-2"><Link :href="route('admin.categories')">Prodotti</Link></li>
-                    </ul>
-                </div>
+                <LeftMenu></LeftMenu>
                 <div class="p-4 text-gray-800">
                     <slot />
                 </div>
